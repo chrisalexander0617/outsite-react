@@ -2,9 +2,11 @@ import React, {Component} from 'react';
 import DatePickerInput from './inputs/DatePickerInput';
 import 'react-day-picker/lib/style.css';
 
-class PropertiesForm extends Component{
+class PropertiesForm extends Component
+{
 
-    constructor(props){
+    constructor(props)
+    {
         super(props);
         this.state = {
             arrivalDate:null,
@@ -15,15 +17,18 @@ class PropertiesForm extends Component{
 
     }
 
-    changeDepartureDate(selectedDay, modifiers, dayPickerInput){
-        console.log(selectedDay, modifiers, dayPickerInput )
+    changeDepartureDate(selectedDay)
+    {
+        console.log(selectedDay)
     }
 
-    changeArrivalDate(selectedDay, modifiers, dayPickerInput){
-        console.log( selectedDay, modifiers, dayPickerInput )
+    changeArrivalDate(selectedDay)
+    {
+        console.log( selectedDay)
     }
 
-    render(){
+    render()
+    {
         //const { selectedDay, isDisabled, isEmpty } = this.state;
         return ( 
             <>

@@ -1,9 +1,16 @@
 import './App.css';
-import PropertiesForm from './components/form/PropertiesForm'
+import MastHeader from './components/headers/MastHeader';
+import PropertiesForm from './components/form/PropertiesForm';
+import LocationsGrid from './components/content/LocationsGrid';
 
 function App() {
   return (
-    <div><PropertiesForm /></div>
+    
+    <div>
+        <MastHeader />
+        <PropertiesForm />
+        <LocationsGrid />
+    </div>
   );
 }
 
