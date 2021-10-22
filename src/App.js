@@ -1,8 +1,9 @@
 import './App.css';
+import PropertiesForm from './components/form/PropertiesForm'
 
 function App() {
   return (
-    <div></div>
+    <div><PropertiesForm /></div>
   );
 }
 
