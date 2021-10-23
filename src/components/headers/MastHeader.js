@@ -10,8 +10,7 @@ function MastHeader(props){
     }
     return (
         <>
-            <header  style={styles} >
-                <h1>Header</h1>
+            <header style={styles}>
             </header>
         </>
     )

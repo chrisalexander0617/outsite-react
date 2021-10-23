@@ -13,6 +13,7 @@ function App() {
        <div class="content-wrap px-10">
         <PropertiesForm />
         <LocationsGrid />
+        <LocationsGrid />
        </div>
         
     </div>

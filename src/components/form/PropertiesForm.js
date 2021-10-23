@@ -29,18 +29,21 @@ class PropertiesForm extends Component
 
     render()
     {
+
+        const styles = {
+            marginTop:'-150px'
+        }
         //const { selectedDay, isDisabled, isEmpty } = this.state;
         return ( 
-            <>
-                {
-                    this.state.departureDate && <div>itshere</div>
-                }
-                <DatePickerInput handleChange={this.changeDepartureDate} />
-                {
-                    this.state.arrivalDate && <div>its here</div>
-                }
-                <DatePickerInput  handleChange={this.changeArrivalDate} />
-            </>
+            <div className="shadow-xl" style={styles}>
+            <h2 className="font-bold text-white mb-10 text-3xl">Work anywhere live differently</h2>
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-4 bg-white p-10 rounded-lg">
+                    <DatePickerInput handleChange={this.changeDepartureDate} />
+                    <DatePickerInput handleChange={this.changeArrivalDate} />
+                    <DatePickerInput handleChange={this.changeDepartureDate} />
+                    <DatePickerInput handleChange={this.changeArrivalDate} />
+                </div>
+            </div>
         )
     }
 }

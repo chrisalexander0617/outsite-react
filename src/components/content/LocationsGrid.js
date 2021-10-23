@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import LocationCard from '../cards/LocationCard';
-
+import axios from 'axios';
 class LocationsGrid extends Component {
     constructor(props){
         super(props);

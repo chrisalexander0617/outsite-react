@@ -6,9 +6,11 @@ export default function Example(props) {
   return (
     <div>
       <p>Please type a day:</p>
-      <DayPickerInput 
-        onDayChange={day => props.handleChange(day)} 
-      />
+      <div class="shadow-lg p-5 rounded-lg">
+        <DayPickerInput 
+          onDayChange={day => props.handleChange(day)} 
+        />
+      </div>
     </div>
   );
 }
