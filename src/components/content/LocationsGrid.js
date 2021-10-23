@@ -12,7 +12,11 @@ class LocationsGrid extends Component {
     render(){
         return (
             <>
-                <LocationCard />
+                <div className="grid grid-cols-1 md:grid-cols-3">
+                    <LocationCard />
+                    <LocationCard />
+                    <LocationCard />
+                </div>
             </>
         )
     }
