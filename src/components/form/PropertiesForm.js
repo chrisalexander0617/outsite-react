@@ -38,10 +38,10 @@ class PropertiesForm extends Component
             <div className="shadow-xl" style={styles}>
             <h2 className="font-bold text-white mb-10 text-3xl">Work anywhere live differently</h2>
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-4 bg-white p-10 rounded-lg">
-                    <DatePickerInput handleChange={this.changeDepartureDate} />
-                    <DatePickerInput handleChange={this.changeArrivalDate} />
-                    <DatePickerInput handleChange={this.changeDepartureDate} />
-                    <DatePickerInput handleChange={this.changeArrivalDate} />
+                    <DatePickerInput placeholder="Arriving" handleChange={this.changeDepartureDate} />
+                    <DatePickerInput placeholder="Departure" handleChange={this.changeArrivalDate} />
+                    <input  className="shadow-lg p-5 rounded-lg border" placeholder="Number of guests" type="number"  />
+                    <button className=" bg-blue-200 text-white rounded-full">Filter</button>
                 </div>
             </div>
         )

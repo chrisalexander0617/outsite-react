@@ -5,9 +5,9 @@ import 'react-day-picker/lib/style.css';
 export default function Example(props) {
   return (
     <div>
-      <p className="mb-7">{props.inputLabel}</p>
       <div className="shadow-lg p-5 rounded-lg border">
         <DayPickerInput 
+          placeholder={props.placeholder}
           onDayChange={day => props.handleChange(day)} 
         />
       </div>
