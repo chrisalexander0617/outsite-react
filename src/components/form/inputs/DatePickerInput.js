@@ -6,7 +6,7 @@ export default function Example(props) {
   return (
     <div>
       <p>Please type a day:</p>
-      <div class="shadow-lg p-5 rounded-lg">
+      <div className="shadow-lg p-5 rounded-lg">
         <DayPickerInput 
           onDayChange={day => props.handleChange(day)} 
         />
